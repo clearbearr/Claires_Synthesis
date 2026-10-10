@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Claire-Elise Addo" />
+    <meta name="description" content="A playful investigation into the shiny shokoto debate." />
+    <title>Home | The Shiny Shokoto Files</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>The Shiny Shokoto Files</h1>
+      <p>A very serious investigation into a very shiny question.</p>
+      <button id="themeToggle" type="button">Dark mode</button>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="debate.html">The Debate</a></li>
+        <li><a href="vote.html">Cast Your Vote</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="layout">
+        <div>
+          <article>
+            <h2>Welcome to the Debate</h2>
+            <p>
+              Every few months the timeline erupts over one question: should men wear
+              <strong>shiny shokoto</strong>? Some say it is <em>fearless</em>. Others say it is
+              <em>too much</em>. This site collects the evidence, lets you vote, and
+              refuses to take a side.
+            </p>
+            <p>
+              Here is the <i lang="en">official</i> position of this website: <b>wear what makes you feel unbothered</b>.
+              Now, look at the evidence.
+            </p>
+
+            <figure>
+              <img
+                src="images/shiny-shokoto.jpeg"
+                alt="A pair of denim jeans covered in colorful rhinestones and crystals, hanging on a rail"
+                width="300"
+                height="650"
+                loading="lazy"
+              />
+              <figcaption>Exhibit A: the shiniest shokoto ever found.</figcaption>
+            </figure>
+          </article>
+
+          <article>
+            <h2>What You Can Do Here</h2>
+            <ol>
+              <li>Read the arguments on <a href="debate.html">The Debate</a> page</li>
+              <li>Search and compare both sides in the arguments table</li>
+              <li>Vote on the <a href="vote.html">poll</a> and watch results update live</li>
+            </ol>
+            <p>
+              Fun fact:<br />
+              this poll saves votes in your own browser,<br />
+              so only <em>you</em> can see them.
+            </p>
+            <hr />
+            <p>Read more about <a href="https://en.wikipedia.org/wiki/Fashion_in_Ghana" target="_blank" rel="noopener">fashion in Ghana</a>.</p>
+          </article>
+        </div>
+
+        <aside>
+          <h2>Live Stats</h2>
+          <p>Votes cast so far:</p>
+          <p class="stat" id="voteCount">0</p>
+          <p class="hint">Sparkle level: <span class="spark">&#10022;</span> maximum</p>
+          <h3>Glossary</h3>
+          <dl>
+            <dt>Shokoto</dt>
+            <dd>Ghanaian slang for trousers.</dd>
+            <dt>Shiny</dt>
+            <dd>Anything that reflects flash photography a little too well.</dd>
+          </dl>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> The Shiny Shokoto Files. Built with HTML, CSS and JavaScript.</p>
+    </footer>
+
+  </body>
+</html>

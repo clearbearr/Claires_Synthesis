@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Claire-Elise Addo" />
+    <meta name="description" content="Cast your vote in the shiny shokoto poll." />
+    <title>Vote | The Shiny Shokoto Files</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>The Shiny Shokoto Files</h1>
+      <p>A very serious investigation into a very shiny question.</p>
+      <button id="themeToggle" type="button">Dark mode</button>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="debate.html">The Debate</a></li>
+        <li><a href="vote.html">Cast Your Vote</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="layout">
+        <div>
+          <form id="voteForm" novalidate>
+            <fieldset>
+              <legend>Should men wear shiny shokoto? (required)</legend>
+              <div class="radio-row">
+                <label><input type="radio" name="verdict" value="yes" required /> Absolutely, let it shine</label>
+                <label><input type="radio" name="verdict" value="no" required /> Absolutely not</label>
+                <label><input type="radio" name="verdict" value="depends" required /> Depends on the occasion</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>A few extra details</legend>
+
+              <label for="voterName">Your name (optional)</label>
+              <input type="text" id="voterName" name="voterName" placeholder="e.g. Claire-Elise" />
+
+              <label for="voterEmail">Email (optional)</label>
+              <input type="email" id="voterEmail" name="voterEmail" placeholder="you@example.com"
+                     pattern="[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}" />
+
+              <label for="occasion">Best occasion for shiny shokoto</label>
+              <select id="occasion" name="occasion">
+                <option value="concert">Concert</option>
+                <option value="party">Party</option>
+                <option value="wedding">Wedding</option>
+                <option value="never">Never</option>
+              </select>
+
+              <label for="confidence">How sure are you? (1 to 10)</label>
+              <input type="number" id="confidence" name="confidence" min="1" max="10" step="1" value="5" required />
+
+              <label for="comment">Final argument (max 120 characters)</label>
+              <textarea id="comment" name="comment" rows="3" maxlength="120"></textarea>
+              <output id="charCounter" for="comment">120 characters remaining</output>
+
+              <label><input type="checkbox" name="agree" required /> I promise to vote honestly</label>
+            </fieldset>
+
+            <button type="submit">Cast Vote</button>
+            <button type="reset">Clear Form</button>
+            <p id="formError" class="error-msg" aria-live="polite"></p>
+            <p id="thanks" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside>
+          <h2>Live Results</h2>
+          <div id="results" aria-live="polite">No votes yet.</div>
+          <p class="hint">Total votes: <span id="voteCount">0</span></p>
+          <button type="button" id="clearVotes">Reset poll</button>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> The Shiny Shokoto Files. Built with HTML, CSS and JavaScript.</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Claire-Elise Addo" />
+    <meta name="description" content="The arguments for and against shiny shokoto." />
+    <title>The Debate | The Shiny Shokoto Files</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>The Shiny Shokoto Files</h1>
+      <p>A very serious investigation into a very shiny question.</p>
+      <button id="themeToggle" type="button">Dark mode</button>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="debate.html">The Debate</a></li>
+        <li><a href="vote.html">Cast Your Vote</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="card">
+        <h2>The Case, Side by Side</h2>
+        <p>Search the table below to filter the arguments.</p>
+
+        <label for="tableFilter">Search arguments:</label>
+        <input type="text" id="tableFilter" placeholder="try typing 'photo'" autocomplete="off" />
+        <p class="hint" id="filterStatus" aria-live="polite"></p>
+
+        <table id="argTable">
+          <caption>The Arguments, By Topic</caption>
+          <thead>
+            <tr>
+              <th scope="col">Topic</th>
+              <th scope="col">For</th>
+              <th scope="col">Against</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Confidence</th>
+              <td>You cannot hide in shiny fabric; it demands presence.</td>
+              <td>Sometimes presence is not what the room asked for.</td>
+            </tr>
+            <tr>
+              <th scope="row">Comfort</th>
+              <td>Surprisingly breathable, say several defenders.</td>
+              <td>Everything is visible under harsh event lighting.</td>
+            </tr>
+            <tr>
+              <th scope="row">Photos</th>
+              <td>Reflects light beautifully in flash photography.</td>
+              <td>Reflects light <em>too</em> beautifully in flash photography.</td>
+            </tr>
+            <tr>
+              <th scope="row">Occasion</th>
+              <td>Concerts, parties and birthdays all welcome sparkle.</td>
+              <td>Funerals and job interviews, not so much.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Both sides remain, as of publishing, extremely unreconciled.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <div class="layout">
+        <article>
+          <h2>Rules of Engagement</h2>
+          <p>To keep the debate civil, please follow the official order of play:</p>
+          <ol>
+            <li>State your position</li>
+            <li>Present one <strong>photo-based</strong> argument</li>
+            <li>Allow the other side to respond
+              <ul>
+                <li>No eye-rolling</li>
+                <li>No <em>muttering</em> under your breath</li>
+              </ul>
+            </li>
+            <li>Vote on the <a href="vote.html">poll</a></li>
+          </ol>
+
+          <blockquote>
+            "Fashion is not about being understood. It is about being noticed."
+            <br />A person at every party
+          </blockquote>
+
+          <h3>Key Terms</h3>
+          <dl>
+            <dt>Shine factor</dt>
+            <dd>How much light an outfit sends back at a camera.</dd>
+            <dt>Bling</dt>
+            <dd>Sparkly decoration.</dd>
+            <dd>Also the sound a phone makes when someone posts a photo of it.</dd>
+          </dl>
+        </article>
+
+        <aside>
+          <h2>Exhibit B</h2>
+          <figure>
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeans.jpg"
+              alt="A pair of plain blue denim jeans laid on the floor"
+              width="300"
+              height="225"
+              loading="lazy"
+            />
+            <figcaption>The classic, no-shine alternative.</figcaption>
+          </figure>
+          <p><a href="mailto:?subject=Settle%20this%20debate&body=Shiny%20shokoto%3A%20yes%20or%20no%3F">Email a friend to settle this</a></p>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> The Shiny Shokoto Files. Built with HTML, CSS and JavaScript.</p>
+    </footer>
+
+  </body>
+</html>
